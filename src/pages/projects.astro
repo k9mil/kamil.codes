@@ -24,7 +24,7 @@ const projectList: Project[] = [
     name: "🌍 kamil.codes",
     description:
       "My personal website created with Astro, TypeScript and Tailwind.",
-    url: "https://github.com/kamil-codes/kamil.codes",
+    url: "https://github.com/k9mil/kamil.codes",
   },
   {
     name: "🚄 velocitas",
@@ -43,7 +43,7 @@ const projectList: Project[] = [
 
 <Layout title="Kamil Zak — Projects">
   <div class="space-y-12">
-    <h1 class="xs:text-6xl font-bold xxs:text-4xl font-inter">Projects</h1>
+    <h1 class="xs:text-5xl font-bold xxs:text-4xl font-inter">Projects</h1>
     <div class="flex flex-col space-y-6">
       {
         projectList.map((project) => (
@@ -53,7 +53,7 @@ const projectList: Project[] = [
                 {project.name}
               </h2>
               <div class="mt-2">
-                <p class="xs:text-md xxs:text-sm text-neutral-400">
+                <p class="text-sm text-neutral-400">
                   {project.description}
                 </p>
               </div>

@@ -5,10 +5,10 @@ import Layout from "../layouts/layout.astro";
 <Layout title="Kamil Zak">
   <div class="space-y-6">
     <div class="flex flex-col space-y-6">
-      <h1 class="text-6xl font-bold font-inter">
-        Hey, I'm Kamil <span class="wave text-6xl">👋</span>
+      <h1 class="text-5xl font-bold font-inter">
+        Hey, I'm Kamil <span class="wave text-5xl">👋</span>
       </h1>
-      <p class="text-neutral-400">
+      <p class="text-neutral-400 text-sm">
         I'm a 23 year old multidisciplinary full-stack <span class="font-bold">Software Engineer</span>
         from Poland, residing in the United Kingdom for over a decade. My core interests lie in
      	  developing backend systems, whether it's web-related or otherwise.
@@ -91,7 +91,7 @@ import Layout from "../layouts/layout.astro";
     </div>
     <div class="flex flex-col space-y-6">
       <h2 class="text-2xl font-bold font-inter">Who am I?</h2>
-      <p class="text-neutral-400">
+      <p class="text-neutral-400 text-sm">
 		Currently working with loopsio, a dynamic, student-driven tech agency, where I liaise with clients to engineer bespoke software solutions. I've been lucky enough to work on many projects with loopsio, most notably <a
 		href="https://venturithm.com/login"
 		class="text-neutral-300 hover:text-neutral-500 transition duration-300 ease-in-out font-bold"
@@ -99,7 +99,7 @@ import Layout from "../layouts/layout.astro";
 	  	>, an award winning UK start-up. As one of the first two engineers on the project, the system was built entirely from the ground up, where my responsibility was focused on the backend, infrastructure & DevOps. 
       In the near future I will be joining Barclays, a multinational universal bank, as part of my Graduate Programme.
       </p>
-	  <p class="text-neutral-400">
+	  <p class="text-neutral-400 text-sm">
 		Primarily use Python for most of my projects, alongside TypeScript, React and Tailwind. Though, you will also often find me using Docker for containerization. If you want to take a peep at my projects, head
         over to <a
           href="/projects"
@@ -114,7 +114,7 @@ import Layout from "../layouts/layout.astro";
     </div>
     <div class="flex flex-col space-y-6">
       <h2 class="text-2xl font-bold font-inter">Contact</h2>
-      <p class="text-neutral-400">
+      <p class="text-neutral-400 text-sm">
         If you have any questions, or would like to work with me on a project,
         or absolutely anything else; feel free to message me on <a
           href="https://discord.com/users/886739001812332564"
@@ -130,3 +130,46 @@ import Layout from "../layouts/layout.astro";
     </div>
   </div>
 </Layout>
+<style>
+  .wave {
+    animation-name:wave-animation;
+    animation-duration:2.5s;
+    animation-iteration-count:infinite;
+    transform-origin:70% 70%;
+    display:inline-block
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform:rotate(0deg)
+    }
+
+    10% {
+      transform:rotate(14deg)
+    }
+
+    20% {
+      transform:rotate(-8deg)
+    }
+
+    30% {
+      transform:rotate(14deg)
+    }
+
+    40% {
+      transform:rotate(-4deg)
+    }
+
+    50% {
+      transform:rotate(10deg)
+    }
+
+    60% {
+      transform:rotate(0deg)
+    }
+
+    100% {
+      transform:rotate(0deg)
+    }
+}
+</style>
