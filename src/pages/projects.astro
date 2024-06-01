@@ -1,61 +1,59 @@
 ---
-import Layout from "../layouts/layout.astro";
+import Layout from '../layouts/layout.astro'
 
 interface Project {
-  name: string;
-  description: string;
-  url: string;
+  name: string
+  description: string
+  url: string
 }
 
 const projectList: Project[] = [
   {
-    name: "🗺️ statum",
+    name: '🗺️ statum',
     description:
-      "A data-driven Twitch related website. Written in Python + Flask, with MongoDB. Current features include Twitch OAuth integration, personalized dashboard, unique streamer insights & much more.",
-    url: "https://github.com/k9mil/statum",
+      'A data-driven Twitch related website. Written in Python + Flask, with MongoDB. Current features include Twitch OAuth integration, personalized dashboard, unique streamer insights & much more.',
+    url: 'https://github.com/k9mil/statum'
   },
   {
-    name: "🦅 eagle",
+    name: '🦅 eagle',
     description:
-      "A simple, fast, and fun CLI-based application which functions as a helper to find answers to your programming questions! Written in Golang + Cobra.",
-    url: "https://github.com/k9mil/eagle",
+      'A simple, fast, and fun CLI-based application which functions as a helper to find answers to your programming questions! Written in Golang + Cobra.',
+    url: 'https://github.com/k9mil/eagle'
   },
   {
-    name: "🌍 kamil.codes",
+    name: '🌍 kamil.codes',
     description:
-      "My personal website created with Astro, TypeScript and Tailwind.",
-    url: "https://github.com/k9mil/kamil.codes",
+      'My personal website created with Astro, TypeScript and Tailwind.',
+    url: 'https://github.com/k9mil/kamil.codes'
   },
   {
-    name: "🚄 velocitas",
+    name: '🚄 velocitas',
     description:
-      "A simulation of Docker + Nginx load balancing. Built with Go and Fiber.",
-    url: "https://github.com/k9mil/velocitas",
+      'A simulation of Docker + Nginx load balancing. Built with Go and Fiber.',
+    url: 'https://github.com/k9mil/velocitas'
   },
   {
-    name: "👁️ Oculus",
+    name: '👁️ oculus',
     description:
-      "A camera scraper for Allegro & OLX to try and catch low priced items at user-set prices. Written in Python, with the help of BeautifulSoup4.",
-    url: "https://github.com/k9mil/oculus-monitor",
-  },
-];
+      'A camera scraper for Allegro & OLX to try and catch low priced items at user-set prices. Written in Python, with the help of BeautifulSoup4.',
+    url: 'https://github.com/k9mil/oculus-monitor'
+  }
+]
 ---
 
-<Layout title="Kamil Zak — Projects">
-  <div class="space-y-12">
-    <h1 class="xs:text-5xl font-bold xxs:text-4xl font-inter">Projects</h1>
-    <div class="flex flex-col space-y-6">
+<Layout title='Kamil Zak — Projects'>
+  <div class='space-y-12'>
+    <h1 class='xs:text-4xl font-bold xxs:text-4xl font-inter'>Projects</h1>
+    <div class='flex flex-col space-y-6'>
       {
         projectList.map((project) => (
-          <a href={project.url} target="_blank" rel="noopener" class="block">
-            <div class="border border-neutral-800 rounded-md p-4 hover:border-neutral-600 transition duration-500 ease-in-out">
-              <h2 class="xs:text-lg font-semibold xxs:text-md">
+          <a href={project.url} target='_blank' rel='noopener' class='block'>
+            <div class='border border-neutral-800 rounded-md p-4 hover:border-neutral-600 transition duration-500 ease-in-out'>
+              <h2 class='xs:text-lg font-semibold xxs:text-md'>
                 {project.name}
               </h2>
-              <div class="mt-2">
-                <p class="text-sm text-neutral-400">
-                  {project.description}
-                </p>
+              <div class='mt-2'>
+                <p class='text-sm text-neutral-400'>{project.description}</p>
               </div>
             </div>
           </a>
