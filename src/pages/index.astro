@@ -3,8 +3,8 @@ import Layout from "../layouts/layout.astro";
 ---
 
 <Layout title="Kamil Zak">
-  <div class="space-y-6">
-    <div class="flex flex-col space-y-6">
+  <article class="space-y-6">
+    <section class="flex flex-col space-y-6">
       <h1 class="text-4xl font-bold">
         Hi, I'm Kamil <span class="wave text-4xl">👋</span>
       </h1>
@@ -15,7 +15,7 @@ import Layout from "../layouts/layout.astro";
         I work with Python for backend, React/TypeScript/Tailwind for frontend, and AWS for cloud
         infrastructure.
       </p>
-      <div class="flex flex-row space-x-2">
+      <nav class="flex flex-row space-x-2" aria-label="Social Media Hyperlinks">
         <a href="https://github.com/k9mil" target="_blank" rel="noopener" aria-label="github">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -78,9 +78,9 @@ import Layout from "../layouts/layout.astro";
             ></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg
           >
         </a>
-      </div>
-    </div>
-    <div class="flex flex-col space-y-6">
+      </nav>
+    </section>
+    <section class="flex flex-col space-y-6">
       <h2 class="text-2xl font-semibold">What do I do?</h2>
       <p class="text-[#1b1b1b] text-base font-normal">
         Currently, I'm working at <a
@@ -107,8 +107,8 @@ import Layout from "../layouts/layout.astro";
         >, a San Francisco-based sales software helping field teams plan routes and manage their
         territories.
       </p>
-    </div>
-    <div class="flex flex-col space-y-6">
+    </section>
+    <section class="flex flex-col space-y-6">
       <h2 class="text-2xl font-semibold">Outside of work</h2>
       <p class="text-[#1b1b1b] text-base font-normal">
         In my free time, I'm building <a
@@ -123,8 +123,8 @@ import Layout from "../layouts/layout.astro";
         When I'm not coding, you'll find me running, playing blitz chess, watching films, or getting
         lost in a good book.
       </p>
-    </div>
-    <div class="flex flex-col space-y-6">
+    </section>
+    <section class="flex flex-col space-y-6">
       <h2 class="text-2xl font-semibold">Contact</h2>
       <p class="text-[#1b1b1b] text-base font-normal">
         For inquiries or collaboration opportunities, feel free to reach out via <a
@@ -139,6 +139,6 @@ import Layout from "../layouts/layout.astro";
           rel="noopener">email</a
         >.
       </p>
-    </div>
-  </div>
+    </section>
+  </article>
 </Layout>

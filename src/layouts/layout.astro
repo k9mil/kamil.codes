@@ -12,21 +12,36 @@ const { title } = Astro.props;
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title || "Kamil Zak — Software Engineer"}</title>
+
     <meta
       name="description"
       content="Kamil — Software Engineer based in the UK, currently working at Barclays."
     />
-    <meta name="keywords" content="Kamil, Zak, k9mil" />
+    <meta name="keywords" content="Kamil, Zak, k9mil, Software Engineer, Software Developer" />
     <meta name="author" content="Kamil Zak" />
+
     <meta property="og:type" content="website" />
+    <meta property="og:title" content={title || "Kamil Zak — Software Engineer"} />
+    <meta
+      property="og:description"
+      content="Software Engineer based in the UK, currently working at Barclays."
+    />
+
+    <link
+      rel="preload"
+      href="https://raw.githubusercontent.com/RandomMaerks/Overused-Grotesk/master/fonts/variable/OverusedGroteskRoman-VF.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <link rel="icon" href="https://emojicdn.elk.sh/🌎" />
-    {title && <title>{title}</title>}
   </head>
   <body class="bg-[#FCFCFB] w-screen flex text-[#1b1b1b] lg:pl-24 lg:justify-start justify-center">
-    <div
+    <main
       class="flex flex-col w-4/5 xs:w-3/4 sm:w-2/3 md:w-3/5 lg:w-1/2 xl:w-2/5 2xl:w-[600px] items-center space-y-16 min-h-screen justify-center md:py-0 py-24"
     >
       <slot />
-    </div>
+    </main>
   </body>
 </html>
