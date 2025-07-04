@@ -1,7 +1,6 @@
 @font-face {
   font-family: "Overused Grotesk";
-  src: url("https://raw.githubusercontent.com/RandomMaerks/Overused-Grotesk/master/fonts/variable/OverusedGroteskRoman-VF.ttf")
-    format("truetype");
+  src: url("/fonts/OverusedGroteskRoman-VF.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: fallback;
