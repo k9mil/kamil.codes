@@ -5,14 +5,15 @@ import Layout from "../layouts/layout.astro";
 <Layout title="Kamil Zak">
   <div class="space-y-6">
     <div class="flex flex-col space-y-6">
-      <h1 class="text-4xl font-bold font-inter">
+      <h1 class="text-4xl font-bold">
         Hi, I'm Kamil <span class="wave text-4xl">👋</span>
       </h1>
-      <p class="text-neutral-400 text-sm">
-        I'm a 24 year old full-stack <span class="font-bold">Software Engineer</span>
-        from Poland, now based in the United Kingdom. My core focus lies in architecting robust systems
-        and web infrastructure, with a particular emphasis on backend development. Passionate about scalable,
-        performant and maintainable code.
+      <p class="text-[#1b1b1b] text-base font-normal">
+        I'm a 24-year-old full-stack software engineer from Poland, now based in the United Kingdom.
+        I'm passionate about system architecture, web infrastructure, and distributed systems —
+        tackling challenges in system design and scalability while writing clean, maintainable code.
+        I work with Python for backend, React/TypeScript/Tailwind for frontend, and AWS for cloud
+        infrastructure.
       </p>
       <div class="flex flex-row space-x-2">
         <a href="https://github.com/k9mil" target="_blank" rel="noopener" aria-label="github">
@@ -21,7 +22,7 @@ import Layout from "../layouts/layout.astro";
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"
+            style="fill: #1b1b1b;transform: ;msFilter:;"
             ><path
               fill-rule="evenodd"
               clip-rule="evenodd"
@@ -40,7 +41,7 @@ import Layout from "../layouts/layout.astro";
             width="24"
             height="24"
             viewBox="0 0 30 30"
-            style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"
+            style="fill: #1b1b1b;transform: ;msFilter:;"
             ><path
               d="M24,4H6C4.895,4,4,4.895,4,6v18c0,1.105,0.895,2,2,2h18c1.105,0,2-0.895,2-2V6C26,4.895,25.105,4,24,4z M10.954,22h-2.95 v-9.492h2.95V22z M9.449,11.151c-0.951,0-1.72-0.771-1.72-1.72c0-0.949,0.77-1.719,1.72-1.719c0.948,0,1.719,0.771,1.719,1.719 C11.168,10.38,10.397,11.151,9.449,11.151z M22.004,22h-2.948v-4.616c0-1.101-0.02-2.517-1.533-2.517 c-1.535,0-1.771,1.199-1.771,2.437V22h-2.948v-9.492h2.83v1.297h0.04c0.394-0.746,1.356-1.533,2.791-1.533 c2.987,0,3.539,1.966,3.539,4.522V22z"
             ></path></svg
@@ -57,7 +58,7 @@ import Layout from "../layouts/layout.astro";
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"
+            style="fill: #1b1b1b;transform: ;msFilter:;"
             ><path
               d="M9.593 10.971c-.542 0-.969.475-.969 1.055 0 .578.437 1.055.969 1.055.541 0 .968-.477.968-1.055.011-.581-.427-1.055-.968-1.055zm3.468 0c-.542 0-.969.475-.969 1.055 0 .578.437 1.055.969 1.055.541 0 .968-.477.968-1.055-.001-.581-.427-1.055-.968-1.055z"
             ></path><path
@@ -71,7 +72,7 @@ import Layout from "../layouts/layout.astro";
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            style="fill: rgba(255, 255, 255, 1);transform: ;msFilter:;"
+            style="fill: #1b1b1b;transform: ;msFilter:;"
             ><path
               d="M20 4H6c-1.103 0-2 .897-2 2v5h2V8l6.4 4.8a1.001 1.001 0 0 0 1.2 0L20 8v9h-8v2h8c1.103 0 2-.897 2-2V6c0-1.103-.897-2-2-2zm-7 6.75L6.666 6h12.668L13 10.75z"
             ></path><path d="M2 12h7v2H2zm2 3h6v2H4zm3 3h4v2H7z"></path></svg
@@ -80,127 +81,64 @@ import Layout from "../layouts/layout.astro";
       </div>
     </div>
     <div class="flex flex-col space-y-6">
-      <h2 class="text-2xl font-bold font-inter">What do I do?</h2>
-      <p class="text-neutral-400 text-sm font-normal">
+      <h2 class="text-2xl font-semibold">What do I do?</h2>
+      <p class="text-[#1b1b1b] text-base font-normal">
         Currently, I'm working at <a
-          class="text-[#00aeef] font-bold hover:underline hover:cursor-pointer"
+          class="text-[#00aeef] hover:underline hover:cursor-pointer font-bold"
           href="https://home.barclays/"
           target="_blank"
           rel="noopener">Barclays</a
-        >, a multinational universal bank where I work on a greenfield payment tracking initiative —
-        a critical system providing real-time visibility across financial systems, with a focus on
-        establishing centralised payment operations intelligence. Previously, I was part of <a
+        >, a multinational universal bank, where I'm developing a greenfield payment tracking
+        initiative. This critical system provides real-time visibility across financial systems,
+        establishing centralised payment operations intelligence at enterprise scale.
+      </p>
+      <p class="text-[#1b1b1b] text-base font-normal">
+        Previously, I worked at <a
+          class="italic underline hover:cursor-pointer"
           href="https://loopsio.com/"
           target="_blank"
-          rel="noopener"
-          class="hover:underline hover:cursor-pointer"
-          ><span class="text-[#9dbb74] font-bold">l</span><span class="text-[#e6466d] font-bold"
-            >o</span
-          ><span class="text-[#f4c966] font-bold">o</span><span class="text-[#e6814b] font-bold"
-            >p</span
-          ><span class="text-[#aa6ba9] font-bold">s</span><span class="text-[#c5c2c2] font-bold"
-            >i</span
-          ><span class="text-[#5ac3cf] font-bold">o</span></a
-        >, a dynamic student-driven tech agency, engineering bespoke software solutions for clients.
-      </p>
-      <p class="text-neutral-400 text-sm">
-        I've been fortunate enough to work on many projects with
-        <a
-          href="https://loopsio.com/"
+          rel="noopener">loopsio</a
+        >, a dynamic student-driven tech agency engineering bespoke software solutions for clients,
+        and <a
+          class="italic underline hover:cursor-pointer"
+          href="https://badgermapping.com/"
           target="_blank"
-          rel="noopener"
-          class="hover:underline hover:cursor-pointer"
-          ><span class="text-[#9dbb74] font-bold">l</span><span class="text-[#e6466d] font-bold"
-            >o</span
-          ><span class="text-[#f4c966] font-bold">o</span><span class="text-[#e6814b] font-bold"
-            >p</span
-          ><span class="text-[#aa6ba9] font-bold">s</span><span class="text-[#c5c2c2] font-bold"
-            >i</span
-          ><span class="text-[#5ac3cf] font-bold">o</span></a
-        >, most notably <a
-          href="https://venturithm.com/"
-          class="text-[#FD7014] font-bold hover:underline hover:cursor-pointer"
-          target="_blank"
-          rel="noopener">Venturithm</a
-        >, an award winning UK start-up. As one of the first two engineers on the project, the
-        system was built entirely from the ground up, where my responsibility was focused on the
-        backend, infrastructure & DevOps.
-      </p>
-      <p class="text-neutral-400 text-sm">
-        Primarily use Python for most of my projects, alongside TypeScript, React and Tailwind. If
-        you want to take a look at my projects, head over to <a
-          href="/projects"
-          class="text-neutral-300 font-bold hover:underline hover:cursor-pointer"
-          target="_blank"
-          rel="noopener">projects</a
-        >, otherwise head over to <a
-          href="/technologies"
-          class="text-neutral-300 font-bold hover:underline hover:cursor-pointer"
-          target="_blank"
-          rel="noopener">technologies</a
-        > to see what else I use to code.
+          rel="noopener">Badger Maps</a
+        >, a San Francisco-based sales software helping field teams plan routes and manage their
+        territories.
       </p>
     </div>
     <div class="flex flex-col space-y-6">
-      <h2 class="text-2xl font-bold font-inter">Contact</h2>
-      <p class="text-neutral-400 text-sm">
-        If you have any questions, or would like to work with me on a project, or absolutely
-        anything else; feel free to message me on <a
+      <h2 class="text-2xl font-semibold">Outside of work</h2>
+      <p class="text-[#1b1b1b] text-base font-normal">
+        In my free time, I'm building <a
+          class="italic underline hover:cursor-pointer"
+          href="https://allocate.day/"
+          target="_blank"
+          rel="noopener">allocate</a
+        > — an AI-powered, voice-first day planning platform with deep development tool integrations.
+        You can explore my projects and open-source work on GitHub.
+      </p>
+      <p class="text-[#1b1b1b] text-base font-normal">
+        When I'm not coding, you'll find me running, playing blitz chess, watching films, or getting
+        lost in a good book.
+      </p>
+    </div>
+    <div class="flex flex-col space-y-6">
+      <h2 class="text-2xl font-semibold">Contact</h2>
+      <p class="text-[#1b1b1b] text-base font-normal">
+        For inquiries or collaboration opportunities, feel free to reach out via <a
           href="https://discord.com/users/886739001812332564"
-          class="text-neutral-300 font-bold hover:underline hover:cursor-pointer"
+          class="hover:underline hover:cursor-pointer italic"
           target="_blank"
           rel="noopener">discord</a
-        >, or
-        <a
+        > or <a
           href="mailto:hi@kamil.codes"
-          class="text-neutral-300 font-bold hover:underline hover:cursor-pointer"
+          class="hover:underline hover:cursor-pointer italic"
           target="_blank"
           rel="noopener">email</a
-        > me.
+        >.
       </p>
     </div>
   </div>
 </Layout>
-<style>
-  .wave {
-    animation-name: wave-animation;
-    animation-duration: 2.5s;
-    animation-iteration-count: infinite;
-    transform-origin: 70% 70%;
-    display: inline-block;
-  }
-
-  @keyframes wave-animation {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    10% {
-      transform: rotate(14deg);
-    }
-
-    20% {
-      transform: rotate(-8deg);
-    }
-
-    30% {
-      transform: rotate(14deg);
-    }
-
-    40% {
-      transform: rotate(-4deg);
-    }
-
-    50% {
-      transform: rotate(10deg);
-    }
-
-    60% {
-      transform: rotate(0deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-</style>
