@@ -1,5 +1,9 @@
 ---
 import "../styles/global.css";
+
+import SpeedInsights from "@vercel/speed-insights/astro";
+import Analytics from "@vercel/analytics/astro";
+
 interface Props {
   title: string;
 }
@@ -37,6 +41,8 @@ const { title } = Astro.props;
       crossorigin
     />
     <link rel="icon" href="https://emojicdn.elk.sh/🌎" />
+    <SpeedInsights />
+    <Analytics />
   </head>
   <body class="bg-[#FCFCFB] w-screen flex text-[#1b1b1b] lg:pl-24 lg:justify-start justify-center">
     <main
