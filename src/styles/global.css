@@ -10,6 +10,12 @@ body {
   font-family: "Overused Grotesk", sans-serif;
 }
 
+@media (min-width: 2560px) {
+  html {
+    font-size: 125%;
+  }
+}
+
 .wave {
   animation-name: wave-animation;
   animation-duration: 2.5s;
