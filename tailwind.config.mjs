@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
 import colors from "tailwindcss/colors";
-import defaultTheme from "tailwindcss/defaultTheme";
 
 export default {
   content: ["./src/**/*.{astro,html,ts,tsx}"],
@@ -13,11 +12,6 @@ export default {
         black: colors.black,
         white: colors.white,
       },
-    },
-    screens: {
-      xs: "475px",
-      "3xl": "1792px",
-      ...defaultTheme.screens,
     },
   },
   plugins: [],

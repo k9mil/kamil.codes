@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Overused Grotesk";
-  src: url("/fonts/OverusedGroteskRoman-VF.ttf") format("truetype");
+  src: url("/fonts/OverusedGroteskRoman-VF.woff2") format("woff2");
   font-weight: 100 900;
   font-style: normal;
   font-display: fallback;
@@ -16,6 +16,12 @@ body {
   animation-iteration-count: 3;
   transform-origin: 70% 70%;
   display: inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wave {
+    animation: none;
+  }
 }
 
 @keyframes wave-animation {
@@ -49,5 +55,23 @@ body {
 
   100% {
     transform: rotate(0deg);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1791px) {
+  html {
+    font-size: 90%;
+  }
+}
+
+@media (min-width: 3000px) {
+  html {
+    font-size: 125%;
+  }
+}
+
+@media (min-width: 3000px) and (min-height: 1700px) {
+  html {
+    font-size: 165%;
   }
 }
